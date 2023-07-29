@@ -1,0 +1,42 @@
+<%- include('../includes/head',{pageTitle:'login'}) %>
+</head>
+<body>
+  <%- include('../includes/header')%> 
+
+  <div class="bg-slate-800  flex justify-center items-center h-screen py-6">
+
+    <form action="" method="" class="w-full max-w-sm p-6 bg-white rounded-lg shadow-md">
+        <table>
+            <th colspan="2" class=""><h1 class="text-amber-500 font-semibold">Login to Account</h1></th>
+            <tr >
+                <td><label class="my-3" for="email">Email </label></td>
+                <td class="pl-2"><input class="my-3 pl-2 rounded" type="email" class="rounded-lg"  name="email" id=""></td>
+            </tr>
+    
+            
+
+            <tr>
+                <td><label for="password" class="my-3" >Password </label></td>
+                <td class="pl-2"><input type="password" class="my-3 pl-2 rounded" name="password" id="password" required></td>
+            </tr>
+           
+            <tr>
+                <td><Button class="bg-black text-gray-100 p-2 rounded">Login</Button></td>
+                <td class="pl-2"><p id="switch-form"><a href="/signup" class="text-blue-900 underline-offset-8">Signup instead</a></p></td>
+            </tr>
+           
+    
+        </table>
+    </form>
+    
+
+  </div>
+
+
+
+
+
+
+ 
+
+<%- include('../includes/footer') %>

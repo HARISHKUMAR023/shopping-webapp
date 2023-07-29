@@ -2,12 +2,59 @@
 </head>
 <body>
   <%- include('../includes/header')%> 
-  <main>
-    <h1>creat new account</h1>
-    <form action="" method="">
 
-        
+  <div class="bg-slate-800  flex justify-center items-center h-auto py-6">
+
+    <form action="/signup" method="POST" class="w-full max-w-sm p-6 bg-white rounded-lg shadow-md">
+        <table>
+            <th colspan="2" class=""><h1 class="text-amber-500 font-semibold">Create New Account</h1></th>
+            <tr >
+                <td><label class="my-3" for="email">Email </label></td>
+                <td class="pl-2"><input class="my-3 pl-2 rounded" type="email" class="rounded-lg"  name="email" id=""></td>
+            </tr>
+    
+            <tr>
+                <td><label for="confirm-email" class="my-3" >Conform-Email  </label></td>
+                <td class="pl-2"><input type="email" class="my-3 pl-2 rounded" name="confirm-email" id="confirm-email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="password" class="my-3" >Password </label></td>
+                <td class="pl-2"><input type="password" class="my-3 pl-2 rounded" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="Name" class="my-3" >Name</label></td>
+                <td class="pl-2"><input type="text" class="my-3 pl-2 rounded" name="name" id="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="Street" class="my-3" >Street</label></td>
+                <td class="pl-2"><input type="text" class="my-3 pl-2 rounded" name="street" id="street" required></td>
+            </tr>
+            <tr>
+                <td><label for="City" class="my-3" >City</label></td>
+                <td class="pl-2"><input type="text" class="my-3 pl-2 rounded" name="city" id="City" required></td>
+            </tr>
+            <tr>
+                <td><label for="pincode" class="my-3" >Pincode</label></td>
+                <td class="pl-2"><input type="text" class="my-3 pl-2 rounded" name="pincode" id="pincode" required></td>
+            </tr>
+            <tr>
+                <td><Button class="bg-black text-gray-100 p-2 rounded">Signup</Button></td>
+                <td class="pl-2"><p id="switch-form"><a href="/login" class="text-blue-900 underline-offset-8">Login instead</a></p></td>
+            </tr>
+           
+    
+        </table>
     </form>
-  </main> 
+    
+
+  </div>
+
+
+
+
+
+
+ 
 
 <%- include('../includes/footer') %>
